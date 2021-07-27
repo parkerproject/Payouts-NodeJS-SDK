@@ -1,6 +1,5 @@
 # PayPal Payouts API SDK for NodeJS
 
-![PayPal Developer](homepage.jpg)
 
 __Welcome to PayPal NodeJS SDK__. This repository contains PayPal's NodeJS SDK and samples for [v1/payments/payouts](https://developer.paypal.com/docs/api/payments.payouts-batch/v1/) APIs.
 
@@ -20,12 +19,18 @@ For contributing or referring the samples, You can fork/refer this repository.
 This will create a Payout and print the batch_id for the Payout.
 #### Code to Execute:
 ```javascript
-const paypal = require('@paypal/payouts-sdk');
+const paypal = require('@parkerproject/paypal-payouts-sdk');
   
-// Creating an environment
+// Creating an environment using client id and secret
 let clientId = "<<PAYPAL-CLIENT-ID>>";
 let clientSecret = "<<PAYPAL-CLIENT-SECRET>>";
 let environment = new paypal.core.SandboxEnvironment(clientId, clientSecret);
+let client = new paypal.core.PayPalHttpClient(environment);
+
+
+// Creating an environment using access token
+let accessToken = "<<PAYPAL-ACCESS-TOKEN>>"
+let environment = new paypal.core.SandboxEnvironmentWithAccessToken(accessToken);
 let client = new paypal.core.PayPalHttpClient(environment);
 
 let requestBody = {
@@ -98,12 +103,17 @@ createPayouts();
 This will create a Payout with validation failure to showcase how to parse the failed response entity. Refer samples for more scenarios
 #### Code to Execute:
 ```javascript
-const paypal = require('@paypal/payouts-sdk');
+const paypal = require('@parkerproject/paypal-payouts-sdk');
   
-// Creating an environment
+// Creating an environment using client id and secret
 let clientId = "<<PAYPAL-CLIENT-ID>>";
 let clientSecret = "<<PAYPAL-CLIENT-SECRET>>";
 let environment = new paypal.core.SandboxEnvironment(clientId, clientSecret);
+let client = new paypal.core.PayPalHttpClient(environment);
+
+// Creating an environment using access token
+let accessToken = "<<PAYPAL-ACCESS-TOKEN>>"
+let environment = new paypal.core.SandboxEnvironmentWithAccessToken(accessToken);
 let client = new paypal.core.PayPalHttpClient(environment);
 
 let requestBody = {
