@@ -1,18 +1,10 @@
-# PayPal Payouts API SDK for NodeJS
+# Unofficial PayPal Payouts API SDK for NodeJS
 
+Forked from the official SDK. 
 
-__Welcome to PayPal NodeJS SDK__. This repository contains PayPal's NodeJS SDK and samples for [v1/payments/payouts](https://developer.paypal.com/docs/api/payments.payouts-batch/v1/) APIs.
-
-This is a part of the next major PayPal SDK. It includes a simplified interface to only provide simple model objects and blueprints for HTTP calls. This repo currently contains functionality for PayPal Payouts APIs which includes [Payouts](https://developer.paypal.com/docs/api/payments.payouts-batch/v1/).
 
 Please refer to the [PayPal Payouts Integration Guide](https://developer.paypal.com/docs/payouts/) for more information. Also refer to [Setup your SDK](https://developer.paypal.com/docs/payouts/reference/setup-sdk) for additional information about setting up the SDK's.
 
-## Usage
-### Binaries
-
-It is not mandatory to fork this repository for using the PayPal SDK. You can refer [PayPal Payouts SDK](https://developer.paypal.com/docs/payouts/reference/setup-sdk/#install-the-sdk) for configuring and working with SDK without forking this code.
-
-For contributing or referring the samples, You can fork/refer this repository. 
 
 ## Examples
 ### Creating a Payouts
